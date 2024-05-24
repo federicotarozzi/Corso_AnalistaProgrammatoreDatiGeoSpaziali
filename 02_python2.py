@@ -1,5 +1,5 @@
 # import this funzione interna a Python che contiene le fondamenta ideologiche del linguaggio.
-import this
+
 '''
 nome = "Federico"
 print(nome)
@@ -12,6 +12,10 @@ c = a + b
 
 print(c) 
 '''
+
+# intero
+x = 5
+
 
 
 
