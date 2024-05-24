@@ -18,5 +18,10 @@ if code[0] in cifre and code[1] in cifre and code[2] in cifre and code[3] in cif
 else:
     print("la chiave inserita non è composta da cifre")
 
-
-
+'''
+if (code[0] in cifre and
+    code[1] in cifre and
+    code[2] in cifre and
+    code[3] in cifre):
+posso scriverlo ancge così usando le parentei per avere tutto un po' più ordinato. 
+'''
