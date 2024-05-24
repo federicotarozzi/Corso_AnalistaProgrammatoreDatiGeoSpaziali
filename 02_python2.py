@@ -1,5 +1,6 @@
 # import this funzione interna a Python che contiene le fondamenta ideologiche del linguaggio.
 '''
+# PROVA PRIMO CODICE PRIMO GIORNO # 
 nome = "Federico"
 print(nome)
 
@@ -108,6 +109,8 @@ n1 <= n2
 
 
 ### OPERATORI LOGICI - tabelle di verità ###
+
+
 # AND logico --> operatore che ritorna VERO se e solo se entrambe sono vere, in tutti gli altri casi ritorna False. 
 # V and V == V
 # V and F == F
@@ -127,11 +130,55 @@ a = 10
 b = 10
 ex4 = (a <= b) # vale vero
 
-print(ex3 and ex4)
+print(ex3 and ex4) # in questo caso da VERO perchè le condizioni sono entrambe vere
 
 
+# OR logico --> operatore che ritorna FALSO se e solo se entrambe sono false, in tutti gli altri casi ritorna Vere. 
+# V or V == V
+# V or F == V
+# F or V == V
+# F or F == F 
+print(ex1 or ex2)
 
 
+# NOT logico --> operatore che ritorna l'opposto di ciò che segue il NOT. 
+# not V == F
+# not F == V
+
+
+### CONTROLLO DI FLUSSO CON IF ###
+# uso all'interno del controllo di flusso, sulla base del verificarsi di dati condizioni, determino se posso far avverare date condizioni oppure no
+# uso i blocchi if, se uno condizione è valutata vera allora segue le istruzioni altrimenti altro...
+
+
+'''
+# struttura
+if <condizione>: 
+    <istruzioni>
+... '''
+
+n1 = 10 
+n2 = 8
+if n1 > n2:
+    print("n1 è maggiore di n2")
+elif (n1 == n2): # valuto anche la condizione legata al if, comodo per aggiungere
+    print("n1 è uguale a n2")
+else: # valuta l'opposto rispetto alla condizione di if
+    print("n1 è minore di b")
+
+
+# valuto la condizione, se la condizione posta dopo l'if è TRUE, eseguo il contenuto dopo l'indentazione. 
+
+
+# ESERCIZIO: scrivere un piccolo programma che verifichi se una varaibile "numero intero" sia pari o dispari
+
+numero_int = int(input("Inserisci un numero: "))
+#numero_int = 22
+prova = (numero_int % 2)
+if prova == 0:
+    print("il tuo numero è PARI!")
+else: 
+    print("il tuo numero è DISPARI!")
 
 
 
