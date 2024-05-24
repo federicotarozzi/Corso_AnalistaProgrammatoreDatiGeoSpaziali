@@ -172,5 +172,29 @@ else: # valuta l'opposto rispetto alla condizione di if
 
 
 
+### note sul tipo STINGA ###
+
+# è una sequenza di caratteri
+s1 = "Python"
+print(s1)
+
+# posso accedere al livello posizionele del carattere della strainga da 0 a n inserendo le []
+# char   P y t h o n 
+# index  0 1 2 3 4 5 
+print(s1[1])
+
+# con la funzione len() scopro il numero dei caratteri della varaibile 
+print(len(s1))
+
+
+s2 = "Python per tutti"
+print(s2[0:6]) # stampa i caratteri da 0 incluso a 6 ESCLUSO (escludo quindi lo spazio che è il sesto carattere)
+print(s2[6:]) # stampo dal sesto carattere in avanti 
+
+
+# verificare se una lettera è presente nella stringa
+print("y" in s1) # TRUE
+print("a" in s1) # FALSE
+
 
 

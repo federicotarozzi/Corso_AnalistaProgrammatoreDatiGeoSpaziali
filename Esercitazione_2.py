@@ -21,3 +21,4 @@ if operazione == "+" or operazione == "-" or operazione == "/" or operazione == 
         print(operatore1 / operatore2)
 else:
     print("inserisci un operazione tra quelle proposte")
+
