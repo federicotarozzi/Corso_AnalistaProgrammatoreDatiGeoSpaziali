@@ -1,3 +1,5 @@
+
+
 # scrivere un programma per aprire una porta: chiedi di inserire una chiave e assicurati che sia corretta per dare accesso alla porta. 
 # dai accesso se il codice inserito corrisponde alla chiave
 # il pin deve essere lungo 4 caratteri 
@@ -25,4 +27,17 @@ if (code[0] in cifre and
     code[2] in cifre and
     code[3] in cifre):
 posso scriverlo ancge così usando le parentei per avere tutto un po' più ordinato. 
+'''
+
+'''
+code = input("inserisci il codice di accesso a 4 cifre: ")
+key = "1234"
+
+if len(code) == 4 and code.isdigit(): # funzione nelle librerie che permette di fare il lavoro reativo alla presenza di solo cifre
+    if (code == key):
+        print("ok")
+    else:
+        print("nop")
+else:
+    print("lunghezza non corretta o non composta da cifre")
 '''
