@@ -1,5 +1,5 @@
 #print("Prosciutto")
-idk = ["non saprei", "non lo so", "non so",  "bho"]
+idk = ["non saprei", "non lo so", "non so", "bho"]
 laura = input("cosa mangiamo stasera? ")
 
 if laura not in idk:
