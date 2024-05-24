@@ -10,8 +10,8 @@ operatore1 = int(input("inserisci il primo numero: "))
 operazione = input("inserisci il tipo di operazione che vuoi compiere (+, -, /, *): ")
 operatore2 = int(input("inseriere il secondo nuemro: "))
 
-if operazione == "+" or operazione == "-" or operazione == "/" or operazione == "*":
-    if operazione == "+":
+if operazione == "+" or operazione == "-" or operazione == "/" or operazione == "*": # qui valuto il simbolo inserito nell'input operazione per vedere se corrisponde con quelle prese in considerazione
+    if operazione == "+": # procedo al calcolo di somma, in questo caso, se l'operazione di imput è il "+"
         print(operatore1 + operatore2)
     elif operazione == "-":
         print(operatore1 - operatore2)
