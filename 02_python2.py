@@ -234,12 +234,12 @@ print("regola n.3")
 
 
 ### CICLO WHILE ### 
-
+val_max = 3
 numero_regola = 1
 # fintanto che la regola è <= a 3 stampa il testo e aggiorna il valore del mio contatore (numero_regola).
 # ciclo del quile torna e va avanti fintanto che è compresa nella condizione espressa dal while (in questo caso <=3)
 # poi aggiungo il contatore che da 1 passa a + 1== 2 ecc ecc.. fino a quanto non arriva a colmare le condizioni dello while 
-while (numero_regola <= 3): # mi pone le condizioni tale per cui il loop può andare avanti ma anche FERMARSI
+while (numero_regola <= val_max): # mi pone le condizioni tale per cui il loop può andare avanti ma anche FERMARSI
     print("regola n.", numero_regola)
     numero_regola += 1 # è il mio contatore, fa si che si increamenti di 1 prima di ricomincaire il loop
 
