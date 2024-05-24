@@ -249,7 +249,27 @@ while (numero_regola <= val_max): # mi pone le condizioni tale per cui il loop p
 for i in range(1,4): # i varrà al primo giro 1, al secondo 2, al terzo 3
     print("Regola n.", i)
 
-
+# iterare su una stringa utilizzando l'operatore in
 s = "python"
 for c in s:
     print(c)
+
+
+stringa_esemp = "Hello World!"
+chatToFind = "W"
+i = 1
+for c in stringa_esemp:
+    if(c == chatToFind):
+        print("trovato: ", c)
+        break # interrompe l'esecuzione del ciclo nel momento in cui trova quello che vuole
+    print(i)
+    i += 1
+
+
+for c in stringa_esemp:
+    if c == chatToFind:
+        continue
+    print(c)
+    
+
+
