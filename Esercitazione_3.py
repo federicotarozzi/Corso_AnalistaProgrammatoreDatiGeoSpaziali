@@ -14,11 +14,12 @@ if code[0] in cifre and code[1] in cifre and code[2] in cifre and code[3] in cif
         else:
             print("Accesso Negato!")
     else:
-        print("la chiave deve avere 4 cifre")
+        print("la chiave deve avere 4 cifre") 
 else:
     print("la chiave inserita non è composta da cifre")
 
 '''
+altro modo per scrivere le cose: 
 if (code[0] in cifre and
     code[1] in cifre and
     code[2] in cifre and
