@@ -172,7 +172,7 @@ else: # valuta l'opposto rispetto alla condizione di if
 
 
 
-### note sul tipo STINGA ###
+### note sul tipo STINGA e modalità di visualizzazione  ###
 
 # è una sequenza di caratteri
 s1 = "Python"
@@ -197,4 +197,23 @@ print("y" in s1) # TRUE
 print("a" in s1) # FALSE
 
 
+print(s1[-1]) # valore negativo, mi indica i caratteri da destra verso sinistra
+
+s3 = "per tutti"
+
+print(s1 + " " + s3)
+print(s1, s3)
+# python per tutti
+print(s1 + "_" + s3[0:3] + "_" +s3 [4:])
+
+# sfrutto la funzione print a pieno
+print(s1, s3, sep="_", end="!") # aggiungo il carattere di separazione con sep= e il carattere da aggiungere alla fine con end=
+# se sostituisco l'end di defoult con il !, non mi andrà a una nuova righa \n
+
+print("Stiamo usando al versione {}" .format(s2)) # valutazione puntata 
+
+# conoscere la posizione di una determinata parola
+msg = "Ciao sono Python, Python è un linguaggio di programmazione"
+print(msg.find("Python")) # uso la funz find, mi ritorna la posizione dell'indice della prima lettera della parola che sto cercando 
+print(msg.rfind("Python")) # rfind cerco la parola python dalla fine della stringa, mi da l'index quando incontra la fine 
 
