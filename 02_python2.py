@@ -217,3 +217,39 @@ msg = "Ciao sono Python, Python è un linguaggio di programmazione"
 print(msg.find("Python")) # uso la funz find, mi ritorna la posizione dell'indice della prima lettera della parola che sto cercando 
 print(msg.rfind("Python")) # rfind cerco la parola python dalla fine della stringa, mi da l'index quando incontra la fine 
 
+### COSTANTE ###
+# in python non esiste il concetto di costante, ovvero una varaibile che rimanse sempre fissa, ma per convenzione si utilizza il nome della variabile TUTTO MAIUSCOLO
+
+COSTANTE = 100
+
+
+
+### print con le strutture comuni ###
+print("regola n.1")
+print("regola n.2")
+print("regola n.3")
+
+### CICLI ### CON WHILE E FOR ###
+# un ciclo mi consente di eseguire un tot di volte la porzione di codice al suo interno. 
+
+
+### CICLO WHILE ### 
+
+numero_regola = 1
+# fintanto che la regola è <= a 3 stampa il testo e aggiorna il valore del mio contatore (numero_regola).
+# ciclo del quile torna e va avanti fintanto che è compresa nella condizione espressa dal while (in questo caso <=3)
+# poi aggiungo il contatore che da 1 passa a + 1== 2 ecc ecc.. fino a quanto non arriva a colmare le condizioni dello while 
+while (numero_regola <= 3): # mi pone le condizioni tale per cui il loop può andare avanti ma anche FERMARSI
+    print("regola n.", numero_regola)
+    numero_regola += 1 # è il mio contatore, fa si che si increamenti di 1 prima di ricomincaire il loop
+
+
+### CICLO FOR ###
+# prendo una serie di valori e faccio un loop legandolo a una varaibie temporale espresso da i --> acquisisce valore sulla base del range che ho assengato
+for i in range(1,4): # i varrà al primo giro 1, al secondo 2, al terzo 3
+    print("Regola n.", i)
+
+
+s = "python"
+for c in s:
+    print(c)
