@@ -47,4 +47,8 @@ while(True): # va all'infinito, eseguo queste istruzioni fino a che non trovo il
 # while = True --> metodo per far partire un ciclo infinito, va poi stoppato nel punto opportuno altrimenti quello va avanti. 
 
 '''
+
+### COMPITO PER CASA ### 
 # metto un blocco: dopo n tentativi mi dice che non posso più mettere una passward. max 3 volte. 
+# and tentativo 1,  tentativo 2 e tentativo 3
+# valore massimo = 3
