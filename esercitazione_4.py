@@ -4,9 +4,12 @@
 
 cifre="0123456789"
 key = "1234" # chiave di accesso 
-val_max = 3
+#val_inizio = 1
+#val_max = 3 # parte da 0-1-2
+# and (val_inizio <= val_max) 
+counter = 0
 correct_key = False
-while(not correct_key ): # metto tutto all'interno di un ciclo while 
+while((not correct_key)and(counter <= 2)): # metto tutto all'interno di un ciclo while 
     code = input("inserisci il codice di accesso a 4 cifre: ")
     if code[0] in cifre and code[1] in cifre and code[2] in cifre and code[3] in cifre:  # se il primo carattere in cifre e così via... allora mi conferma che tutte le 4 cifre sono cifre
         if len(code)== 4: # verifico che la lunghezza della chiave sia 4
@@ -19,6 +22,7 @@ while(not correct_key ): # metto tutto all'interno di un ciclo while
             print("la chiave deve avere 4 cifre") 
     else:
         print("la chiave inserita non è composta da cifre")
+    counter += 1
 
 # il loop si fa partire all'inizio e si fa finire alla fine fine di ogni condizione. 
 
