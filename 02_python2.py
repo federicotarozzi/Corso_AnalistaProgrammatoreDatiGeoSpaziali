@@ -256,7 +256,7 @@ for c in s:
 
 
 stringa_esemp = "Hello World!"
-chatToFind = "W"
+chatToFind = "W" # occhio che python è case sensing quindi se ho la maiuscola devo amntenerla 
 i = 1
 for c in stringa_esemp:
     if(c == chatToFind):
@@ -268,7 +268,7 @@ for c in stringa_esemp:
 
 for c in stringa_esemp:
     if c == chatToFind:
-        continue
+        continue # mostra tuttotranne quello trovato
     print(c)
     
 
