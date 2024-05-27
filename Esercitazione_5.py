@@ -8,8 +8,18 @@
 * * * *
 * * * *
 """
-
-for i in range(0, 4):
-    for j in range (0, 4):
-        print("*", end=" ")
+counter = 0
+for k in range (0,4):
+    for i in range(0,4):
+        if i == counter:
+            print("+", end=" ")
+        else:
+            print("*", end=" ")
     print()
+    counter += 1 
+"""
++ * * *
+* + * *
+* * + *
+* * * +
+"""
