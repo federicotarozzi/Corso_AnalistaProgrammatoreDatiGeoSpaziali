@@ -9,7 +9,7 @@ key = "1234" # chiave di accesso
 # and (val_inizio <= val_max) 
 counter = 0 # variabile temporale che inizia da 0
 correct_key = False 
-while((not correct_key)and(counter <= 2)): # metto tutto all'interno di un ciclo while 
+while((not correct_key)and(counter <= 2)): # metto tutto all'interno di un ciclo while, dove faccio andare il cilco fintanto che la variabile correct_key non diventa True e do 3 tentativi legando a un counter che incrementa di 1 la mia varaibile counter fino a che non arriva a 3(o partendo da 0 a 2)
     code = input("inserisci il codice di accesso a 4 cifre: ")
     if len(code)== 4: # verifico che la lunghezza della chiave sia 4
         if code[0] in cifre and code[1] in cifre and code[2] in cifre and code[3] in cifre:  # se il primo carattere in cifre e così via... allora mi conferma che tutte le 4 cifre sono cifre
@@ -22,12 +22,11 @@ while((not correct_key)and(counter <= 2)): # metto tutto all'interno di un ciclo
             print("la chiave inserita non è composta da cifre")
     else:
         print("la chiave deve avere 4 cifre")
-    counter += 1 # il caounter + uno lo matto alla fine del codice. 
+    counter += 1 # il caounter +1 lo matto alla fine del codice. 
     if (counter == 3) and not correct_key:
         print("Hai esauruto il numero di tentativi a disposizione")
 
 # il loop si fa partire all'inizio e si fa finire alla fine fine di ogni condizione. 
-
 
 
  # METODO 2 PIù CHIARO
