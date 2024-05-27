@@ -8,14 +8,14 @@ key = "1234" # chiave di accesso
 #val_max = 3 # parte da 0-1-2
 # and (val_inizio <= val_max) 
 counter = 0 # variabile temporale che inizia da 0
-correct_key = False
+correct_key = False 
 while((not correct_key)and(counter <= 2)): # metto tutto all'interno di un ciclo while 
     code = input("inserisci il codice di accesso a 4 cifre: ")
     if len(code)== 4: # verifico che la lunghezza della chiave sia 4
         if code[0] in cifre and code[1] in cifre and code[2] in cifre and code[3] in cifre:  # se il primo carattere in cifre e così via... allora mi conferma che tutte le 4 cifre sono cifre
             if code == key: # mi assicuro che il codice inseriro dall'utente sia uguale alla mia chiave 
                 print("Codice esatto, Accesso Consentito")
-                correct_key = True # se arriva a questo punto ed è corretto allora la variabile diventa true
+                correct_key = True # se arriva a questo punto ed è corretto allora la variabile diventa true. !serve a interrompere il ciclo! 
             else:
                 print("Accesso Negato!")
         else:
@@ -23,6 +23,8 @@ while((not correct_key)and(counter <= 2)): # metto tutto all'interno di un ciclo
     else:
         print("la chiave deve avere 4 cifre")
     counter += 1 # il caounter + uno lo matto alla fine del codice. 
+    if (counter == 3) and not correct_key:
+        print("Hai esauruto il numero di tentativi a disposizione")
 
 # il loop si fa partire all'inizio e si fa finire alla fine fine di ogni condizione. 
 
@@ -52,7 +54,5 @@ while(True): # va all'infinito, eseguo queste istruzioni fino a che non trovo il
 
 '''
 
-### COMPITO PER CASA ### 
-# metto un blocco: dopo n tentativi mi dice che non posso più mettere una passward. max 3 volte. 
-# and tentativo 1,  tentativo 2 e tentativo 3
-# valore massimo = 3
+
+
