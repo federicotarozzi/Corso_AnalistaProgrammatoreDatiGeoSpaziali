@@ -54,6 +54,8 @@ print(lista_spesa)
 
 
 
+
+ 
 lista_spesa2 [2] = "biscotti"
 print(lista_spesa2)
 if lista_spesa == lista_spesa2: # ritesto l'uguaglianza 
@@ -61,6 +63,8 @@ if lista_spesa == lista_spesa2: # ritesto l'uguaglianza
 else: 
     print("le liste sono differenti")
 
+
+################ questa parte che segue cerca di dimostrare un qualcosa che non serve dimostrare #############################
 cont = 0
 for prodotto in lista_spesa:
     lista_spesa2[cont] = prodotto # in questo modo ho due copie della lista: ma ora posso modificarle separatamente. 
@@ -100,4 +104,41 @@ print(s2) # ora sono separate...
 x = 9.476452874
 print('x={:.2f}'.format(x)) # per la formattazione in modo da avere 2 numeri dopo la virgola 
 print('x={:.4f}'.format(x)) # questo per avere 4 numeri dopo la virgola 
+
+
+
+
+
+# METODI PER MANIPOLARE DELLE LISTE
+
+abc = [1,2,3,4,5]
+abc.insert(2, "albero") # scelgo la posizione e metto tra virgolette quello che voglio inserire 
+print(abc)
+abc.append(6) # aggiunge alla fine un elemento 
+print(abc)
+abc.remove("albero") # rimuove la prima occorrenza del valore espresso tra parentesi.
+print(abc)
+abc.pop(5) # toglie l'elemento indicato nella posizione tra parentezi, 
+# se messo .pop() toglie l'elemento finale 
+print(abc)
+
+# conosco l'elemento ma non conosco dove si rova all'interno della lista (posizione non nota)
+index = abc.index(2)
+print(index) # dice che è alla posizione 1
+
+
+# conosco la posizione ma non conosco l'elemento 
+posizione = abc[1]
+print(posizione ) #l'elemento è "2"
+
+abc.reverse() # inverte l'ordine della lista
+print(abc)
+
+
+abc.append(2) # ho aggiunto un 2 alla fine 
+print(abc.count(2)) # numero di occorrenze di un deteminato elemento all'interno della lista 
+
+abc = [2,5,6,9,6,5,3,0]
+abc.sort() # organizza tutti gli elementi in ordine crescente NB: GLI ELEMENTI DELLA LISTA IN QUESTO CASO DEVONO ESSERE TUTTI DELLO STESSO TIPO  
+print(abc)
 
