@@ -56,5 +56,3 @@ for k in reversed(range(0,4)):
 * + * *
 + * * *
 """
-
-"" 
