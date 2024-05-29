@@ -70,20 +70,34 @@ print(lista_spesa2)
 lista_spesa3 = list("mele") # la lista della spesa 3 è una lista che ha come elementi una sringa, scomposta dai suoi elementi. ogni elemento contiene un carattere 
 print(lista_spesa3)
 
+# in questo momento definisco due liste uguali 
 s1 = [100,200,300]
 s2 = [100,200,300]
-# s2 = s1
+#s1 = s2  
+# se mantenessi questo assegnamento allora le lego per sempre queste due liste insime
+
+
 # modifico un elemento in s1
 s1[2] = 310 #  accedo al terzo elemento e lo modifico. questa modifica è riguarda sia s1 che s2 periche entrambi gli oggetti puntano alla stessa lista quindi la varaizione di una corrisponde anche alla variazione dell'altro
 print('s1 = {}'.format(s1))
 # print('s2 = {}'.format(s2))
+print(s1)
+print(s2)
 
 # VOLGIO FARE UNA COPIA IN MODO DA DIVIDERE LE DUE LISTE S1 E S2
 contatore = 0
 for numero in s1:
-    s2[contatore] = numero # faccio in modo che il contatore sia uguale agli elementi della lista
+    s2[contatore] = numero*2 # faccio in modo che il contatore sia uguale agli elementi della lista
     contatore += 1 # incremento il contatore prima di reiniziare il ciclo
 
 s1 [2] = 10
 print(s1)
-print(s2)
+print(s2) # ora sono separate...
+
+
+# funzione .format quando e come usarlo
+
+x = 9.476452874
+print('x={:.2f}'.format(x)) # per la formattazione in modo da avere 2 numeri dopo la virgola 
+print('x={:.4f}'.format(x)) # questo per avere 4 numeri dopo la virgola 
+
