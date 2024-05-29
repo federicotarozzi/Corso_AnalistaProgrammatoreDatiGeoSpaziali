@@ -135,10 +135,38 @@ abc.reverse() # inverte l'ordine della lista
 print(abc)
 
 
-abc.append(2) # ho aggiunto un 2 alla fine 
+abc.append(2) # ho aggiunto un 2 alla fine  # LA lista ammette elementi duplicati 
 print(abc.count(2)) # numero di occorrenze di un deteminato elemento all'interno della lista 
 
 abc = [2,5,6,9,6,5,3,0]
 abc.sort() # organizza tutti gli elementi in ordine crescente NB: GLI ELEMENTI DELLA LISTA IN QUESTO CASO DEVONO ESSERE TUTTI DELLO STESSO TIPO  
 print(abc)
+
+print(sorted(abc, reverse=True)) # ALTRO MODO PER SCRIVERE 
+
+
+# lista che non contiene elementi ripetuti. USO IL SET--> struttura dati che non comprende elementi ripetuti. 
+
+abc = [1,2,3,3,3,4,5,6,6,6,7,7,8,9]
+abc = set(abc) # converto la mia lista in un set
+print("abc = ", abc)
+
+# utilizzando le parentesi graffe {} creo direttamente un SET
+abb = {11,2,2,4,5,6,6,7,8,9,0} # creo direttamente un set e mi elimina le ripetizioni
+print("abb = ", abb)
+
+# set per operazioni di tipo insiemistiche 
+
+### OPERAZIONE DI UNIONE ###
+acc = abc | abb # | è il simbolo di UNIONE 
+print (acc) # unione degli elementi delle due liste senza duplicati. 
+
+### OPERAZIOEN DI INTERSEZIONE ###
+acc = abc & abb # & il simbolo di INTERSEZIONE --> CONTENUTI SIA IN UNA LISTA CHE IN UN ALTRA 
+print (acc)
+
+### OPERAZIONE DI DIFFERENZA ###
+
+acc = abc - abb # riporto solo gli elementi contentui in ABC 
+print ("acc =", acc)
 
