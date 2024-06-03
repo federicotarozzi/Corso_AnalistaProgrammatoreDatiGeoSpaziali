@@ -170,3 +170,63 @@ print (acc)
 acc = abc - abb # riporto solo gli elementi contentui in ABC 
 print ("acc =", acc)
 
+
+
+### LIST COMPRIANTION ###
+# creare liste in maniera molto concisa
+# posso filtrare elementi della lista
+
+# METODO 1
+# creo una lista dei primi interi
+list_interi = []
+for i in range(10):
+    list_interi.append(i)
+
+print(list_interi)
+
+# METODO 2
+# faccio la stessa cosa ma in forma più compressa
+
+list_interi = [x for x in range (10)] # crea una lista con valori X --> dove è un elemento che segue il ciclo for 
+print(list_interi)
+
+
+# generare una lista delle prime 10 cifre decimale con solo i numeri dispari 
+# FILTRO attraverso una codizione
+
+
+list_interi = [x for x in range(10) if not x%2 and x!=0] # nella prima parte genero gli elementi e nella seconda li filtro, in questo caso con l'if 
+print(list_interi)
+# aggiungo i filtri: x*a potenza, la condizione per i numeri pari (if not TRUE,), e infine X!= 0 escludo lo zero. 
+
+# SINTASSI --> ELEMENTO CHE VOLFIO INSERIRE, X --> GENERO IL CONTENTUTO DELLA LISTA, IN QUESTO CASO CON UN CICLO FOR (for x in range(10)) --> e infine applico I FILTRI (esempio condizione in If, affinche stampi solo i pari.)
+
+
+###  LIST ANNIDATE TRA DI LORO
+matrix = [ [1,2,3], [4,5,6]] # genero una lista il cui contenuto sono altre liste. 
+print(matrix)
+print(matrix [0]) # accedo alla posizione 0 della lista matrix --> mi stampa la prima lista
+print(matrix [0] [0]) # accedo alla poszione 0 della lista matrix e al primo elemneto della lista contenuta in 0
+
+
+for row in matrix:
+    print(row)
+# OTTENGO:
+#[1, 2, 3]
+#[4, 5, 6]
+
+
+
+
+# ANNIDO NELLA LIST COMPRIANTION UNA SECONDA LIST COMPIRANTION 
+list_eleborata = [[row[i] for row in matrix] for i in range (len(matrix[0]))]
+print(list_eleborata)
+
+# list compriention esterna --> mi da un indicazione sulla lunghezza degli elementi all'interno di matrix
+# lista più esterna prende i valor elemento per elemento.
+# [row[0] for row in matrix] = 1,4
+# [row[1] for row in matrix] = 2,5
+# [row[2] for row in matrix] = 3,6
+#...
+
+

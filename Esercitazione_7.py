@@ -14,6 +14,9 @@ while(indexOf < len(l1)-1): # lunghezza degli elementi della lista meno uno test
   except ValueError: # vedi commento sotto 
     print("non ci sono altre occorrenze del numero {}".format(elementToFind))
     break # lo metto per non fargli ripartire il loop, anche se la condizione del while non risulterebbe vera se ripartisse.
+
+
+  
 # ELEMENTI CHIAVE DEL CODICE SOPRA #
 # utilizzo operatore di increamento
 # slicing sulle liste, sposto la finestra di ricerca dell'elemento dalla posizione dell'ultimo elemento trovato + 1
