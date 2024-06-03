@@ -107,6 +107,7 @@ print("il valore filtrato è: " + str(res))
 d_en = {1:"one", 2:"two", 10:"ten", 9:"nine", 4:"four"}
 
 # volgio ordinere il dizionario sulla base del valore della chiavi.
+# + molto più utile farlo sulle chiavi piuttosto che fare sul valore
 keys = list(d_en.keys()) # prendo fli elementi di keys e li metto un una variabile che chiamo keys di tipo lista
 print(keys)
 
@@ -130,5 +131,8 @@ for k in keys:
     print(d_en[k], end=" ")
 
 
+# usando la funzione sorted mi permette di ordinare il dizionario in maniera simile a come ho fatto prima
 print(sorted(d_en))
+
+
 
