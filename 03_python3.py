@@ -106,10 +106,10 @@ print('x={:.2f}'.format(x)) # per la formattazione in modo da avere 2 numeri dop
 print('x={:.4f}'.format(x)) # questo per avere 4 numeri dopo la virgola 
 
 
+######################################################################à
 
 
-
-# METODI PER MANIPOLARE DELLE LISTE
+### METODI PER MANIPOLARE DELLE LISTE ###
 
 abc = [1,2,3,4,5]
 abc.insert(2, "albero") # scelgo la posizione e metto tra virgolette quello che voglio inserire 
@@ -219,6 +219,8 @@ for row in matrix:
 
 
 # ANNIDO NELLA LIST COMPRIANTION UNA SECONDA LIST COMPIRANTION 
+
+# inverto righe e colonne. 
 list_eleborata = [[row[i] for row in matrix] for i in range (len(matrix[0]))]
 print(list_eleborata)
 
