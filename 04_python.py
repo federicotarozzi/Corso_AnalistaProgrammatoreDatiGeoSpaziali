@@ -86,12 +86,49 @@ for k,v in d3.items(): # riporta il singolo valore dove k è la chiave e v e il 
 8 64
 9 81
 """
-
+"""
 test_list =[
     {"course": "pyhton", "Author":"Jerry"},
     {"course": "C++", "Author":"Mark"},
     {"course": "Java", "Author":"Carlo"}
     ]
+# find dictionary matching value in list
+res = None 
+for sub in test_list:
+    if sub ["Authur"] == "Mark":
+        res = sub
+        break
+
+print("il valore filtrato è: " + str(res))
+"""
+# Formato JSON è così
+# i due formati più usati per l'interscambio di dati tra applicazioni sono XML e JSON 
+
+d_en = {1:"one", 2:"two", 10:"ten", 9:"nine", 4:"four"}
+
+# volgio ordinere il dizionario sulla base del valore della chiavi.
+keys = list(d_en.keys()) # prendo fli elementi di keys e li metto un una variabile che chiamo keys di tipo lista
+print(keys)
+
+# Bubble sort --> algoritmo di ordimaneto 
+
+for i in range(len(keys)): # il range è legato al numero di elementi della lista e quindi anche del dizionario
+    for j in range(0,len(keys)-1-i): # -i mi serve a tolgiere la ripetizione del ciclo e far ripetere meno volte il ciclo. 
+        if keys[j] > keys[j+1]:
+            temp = keys[j]
+            keys[j] = keys[j+1]# quello più grande va dopo
+            keys[j+1] = temp # qui quello più piccolo va a quello prima 
+            #print("GIRO", keys) # per prova di stampa. 
+
+print("Chiavi ordinate: ", keys)
 
 
+
+# volgio stampare i valori ordianti del mio dizionario, in relazione alla lista di chiavi che ho ordianto precedentemente
+print("i valori ordianti sono:")
+for k in keys:
+    print(d_en[k], end=" ")
+
+
+print(sorted(d_en))
 
