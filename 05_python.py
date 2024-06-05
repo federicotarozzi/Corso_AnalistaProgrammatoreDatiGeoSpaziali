@@ -67,5 +67,18 @@ numero1 = 10
 numero2 = 3
 
 risultato = somma(numero1, numero2)
-print(risultato)
 
+print("La somma di {} + {} è uguale a {}".format(numero1,numero2,risultato))
+
+
+
+
+
+def somma(a,b=1,*argument): # di base posso mettere sta cosa del valore di defult di b=1
+    if len(argument) == 0:
+        return(a+b)
+    else:
+        res = a+b
+        for i in argument:
+            res += i
+        return res
