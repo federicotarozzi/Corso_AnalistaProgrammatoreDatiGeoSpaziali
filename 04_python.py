@@ -136,3 +136,7 @@ print(sorted(d_en))
 
 
 
+# riassuntazzo delle puntate precedenti #
+
+
+
