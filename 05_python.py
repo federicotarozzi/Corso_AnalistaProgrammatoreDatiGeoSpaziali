@@ -114,10 +114,17 @@ def function1(*args):
         print("passati {} argomenti alla funzione".format(len(args)))
 
 
-print(function1(1,2,3,4,5,6))
-print(function1())
+print(function1(1,2,3,4,5,6)) #passati 6 argomenti alla funzione
+print(function1()) # nessun argomento passato alla funzione
 
 
 
+# LAMBDA FUNCIONS #
+def somma (a, b):
+    risultato = a + b
+    return risultato
 
+print(somma(3, 4))
 
+lsomma = lambda a,b : a+b  # è uguale a usare la formula di definizione di funzione con def usata qui sopra ma è scritto con lambda ma in forma più contratta
+print(lsomma(4,8))
