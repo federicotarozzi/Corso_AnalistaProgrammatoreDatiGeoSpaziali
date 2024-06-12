@@ -124,7 +124,53 @@ def somma (a, b):
     risultato = a + b
     return risultato
 
-print(somma(3, 4))
+print(somma(3, 4)) # RITORNO IL PARAMETRO QUINDI DEVO METTERE LA VIRGOLA E NON IL SEGNO  DELL'OPERATORE. 
 
 lsomma = lambda a,b : a+b  # è uguale a usare la formula di definizione di funzione con def usata qui sopra ma è scritto con lambda ma in forma più contratta
 print(lsomma(4,8))
+
+
+# le funzioni vengono raccorte all'interno di MODULI (file che contengono codice pronto all'uso)
+# importo il modulo e uso le funzioni in esse contentuto
+# math --> importo un modulo interno a python con le funzioni matematiche 
+
+import math 
+print (max([36,4,2])) # è una funzione definita all'interno del modulo math
+print (min([12,3,4,56,7,1]))
+print(math.sqrt(2))
+
+
+#altra libreria random
+import random as r
+print(r.random())
+
+def random100():
+    #ritorna un numero casuale tra 0 e 100
+    return int(r.random()*100)
+"""
+    x = r.random()
+    numero_causale = int(0<= x <= 100)
+    return numero_causale 
+"""
+
+nuemro_casuale = random100()
+print("numero casuale generato: ", nuemro_casuale)
+
+
+print(r.randrange(0,100,1))
+
+
+
+# DEFINIRE SOTTOFUNZIONI # 
+# funzioni definite all'interno di una funzione
+
+def function1():
+    def function2():
+        print("Sottofunzione funcion2()")
+    def function3():
+        print("Sottofunzione funcion3()")
+    print("funzione function1")
+    function2()
+    function3()
+
+print(function1())
