@@ -174,3 +174,41 @@ def function1():
     function3()
 
 print(function1())
+
+
+
+# ULTIMA COSA SULLE FUNZIONI #
+
+# una funzione può riportare più di un risultato 
+
+from math import sqrt
+
+def somma_sqrt(a,b):
+    risultato = a + b
+    return risultato, sqrt(risultato)
+
+print(somma_sqrt(10,6))
+
+somma, radice_quadr = somma_sqrt(10,6)
+print("La somma vale:{} \nla radice quadrata di vale:{}".format(somma,radice_quadr))
+
+
+def padre(n):
+    def figlio1():
+        print("Ciao sono Mario")
+    def figlio2():
+        print("Ciao sono Lucia")
+    def nofiglio():
+        print("Nessun figlio")
+
+    if n==1:
+        return figlio1
+    elif n==2:
+        return figlio2
+    else:
+        return nofiglio
+
+albero = padre(2)
+print(albero()) # la stampa di albero mi spampa la funzione padre al parametro definito dalla funzioen figlio2 --> quindi in questo caso la stampa è essa stessa una funzione
+print(padre(2)())
+    
