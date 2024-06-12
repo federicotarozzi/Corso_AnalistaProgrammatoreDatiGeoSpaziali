@@ -74,7 +74,7 @@ print("La somma di {} + {} è uguale a {}".format(numero1,numero2,risultato))
 
 
 
-def somma(a,b=1,*argument): # di base posso mettere sta cosa del valore di defult di b=1
+def somma(a,b=1,*argument): # di base posso mettere sta cosa del valore di defult di b=1 # *argument --> n valori possibili
     if len(argument) == 0:
         return(a+b)
     else:
@@ -82,3 +82,42 @@ def somma(a,b=1,*argument): # di base posso mettere sta cosa del valore di deful
         for i in argument:
             res += i
         return res
+    
+
+
+# altra possoibilità
+# funzione che accetta un certo tipo di parametri
+# mi generra una stringa con le informazioni relative a un ipotetico prodotto
+
+def stampaInfo(nome, prezzo, **kwargs): # **kwrgs passo una serei di parametri attraverso una notazione chiavi valori grazie ai due asterischi ** uso robe di dizionari 
+    stringainfo = "Nome prodotto: " + nome + "Prezzo: " + prezzo
+    for k,v in kwargs.items(): # itero su un dizionario
+        print(k,":", v) 
+    return stringainfo
+
+s = stampaInfo("xbox", "100", peso = "1.4", anno = "2015") # due parametri + altri elementi come coppie chiave valore. 
+print(s)
+    
+
+
+
+# *prova --> per n valori pero singoli
+# **prova --> per n valori in formato CHIAVE-VALORE quindi sempre a coppie (dizionario)
+
+
+# caso generale
+
+def function1(*args):
+    if(len(args) == 0):
+        print("nessun argomento passato alla funzione")
+    else:
+        print("passati {} argomenti alla funzione".format(len(args)))
+
+
+print(function1(1,2,3,4,5,6))
+print(function1())
+
+
+
+
+
