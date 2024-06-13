@@ -237,7 +237,7 @@ print("regola n.3")
 val_max = 3
 numero_regola = 1
 # fintanto che la regola è <= a 3 stampa il testo e aggiorna il valore del mio contatore (numero_regola).
-# ciclo del quile torna e va avanti fintanto che è compresa nella condizione espressa dal while (in questo caso <=3)
+# ciclo del wuile torna e va avanti fintanto che è compresa nella condizione espressa dal while (in questo caso <=3)
 # poi aggiungo il contatore che da 1 passa a + 1== 2 ecc ecc.. fino a quanto non arriva a colmare le condizioni dello while 
 while (numero_regola <= val_max): # mi pone le condizioni tale per cui il loop può andare avanti ma anche FERMARSI
     print("regola n.", numero_regola)
@@ -256,7 +256,7 @@ for c in s:
 
 
 stringa_esemp = "Hello World!"
-chatToFind = "W" # occhio che python è case sensing quindi se ho la maiuscola devo amntenerla 
+chatToFind = "W" # occhio che python è case sensing quindi se ho la maiuscola devo manatenerla 
 i = 1
 for c in stringa_esemp:
     if(c == chatToFind):
