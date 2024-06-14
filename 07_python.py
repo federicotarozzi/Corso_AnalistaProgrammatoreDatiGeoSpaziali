@@ -25,6 +25,10 @@ class Automobile:  # convenzione INIZIALE MAIUSCOLA PER LE CLASSI # associo ora 
     # attributi (variabili)
     # metodi (funzioni)
 
+
+    # attrivuto di classe
+    nruote = 4 # caratteristica condivisa trasversalmente da tutti gli elementi della classe. 
+
     #   METODO COSTUTTORE --> funziona richiamata per creare un oggetto di quella specifica classe. 
     def __init__(self, brand, model, color, velocita): # self rappresenta un istanza della classe, a questo aggiungo diversi attributi.
         self.brand = brand # richiamo gli elementi dell'oggetto
@@ -45,13 +49,20 @@ class Automobile:  # convenzione INIZIALE MAIUSCOLA PER LE CLASSI # associo ora 
 fiat500 = Automobile("Fiat", "500", "Rosso", 0)
 fiat500.accellera()
 print("colore: ", fiat500.color)
-
+print("velocità: ", fiat500.velocita)
+fiat500.accellera(500)
+print("velocità: ", fiat500.velocita)
 
 bmw = Automobile("BMW","M3","Blue", 100)
 print("colore: ",bmw.color)
 print("velocità: ",bmw.velocita)
 bmw.accellera(100)
 print("velocità: ",bmw.velocita)
+
+
+# vedo come andare a richiamare l'attributo di classe. 
+print(fiat500.__class__.nruote)
+print(bmw.__class__.nruote)
 
 
 
