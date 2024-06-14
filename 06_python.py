@@ -43,5 +43,23 @@ with open(file_path, "r") as file:
 with open(file_path, "w") as file:
     file.write("scrivo qualcosa di nuovo nel file") 
 
-with open(file_path, "r") as file:
-    print(file.read())
+# .abspath # ritorna la directori e il percoros assoluto del file che gli passo
+# .isdir # 
+
+dirname = os.path.isfile(file_name)
+print(type(dirname))
+print(dirname)
+
+dirname = os.path.abspath(file_name)
+print(type(dirname))
+print(dirname)
+
+
+"""
+os.remove(file_name) # calcello il file. 
+"""
+# verifico che il file sia stato cancellato --> provo a riaprirlo in lettura. 
+
+os.mkdir("prova") # funzione per madedirectory --> creare una cartella
+os.path.isdir("prova")
+os.remove("prova")
