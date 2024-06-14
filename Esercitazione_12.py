@@ -13,21 +13,25 @@ class Persona:
         self.indirizzo = indirizzo
 
     
-    def modifica_indirizzo(self):
-          print("il nuovo indirizzo è: ")
+    def modifica_indirizzo(self, nuovo_indirizzo):
+          print("il nuovo indirizzo è: ",nuovo_indirizzo)
     
-    def aggiorna_eta(self):
-          print("la nuova eta è: ")
+    def aggiorna_eta(self, nuova_eta):
+          if(self.eta > 0 or self.eta < 120):
+               self.eta = nuova_eta 
+          print("la nuova eta è: ", nuova_eta)
+    
+    def stampaInfo():
+         print("nome")
 
 
 
-persona1 = Persona("Federico", "Tarozzi", "23", "via san carlo 45")
-persona1.modifica_indirizzo()
-persona1.aggiorna_eta()
-print("eta nuova: ", persona1.eta)
-print("nuovo indirizzo modificato: ", persona1.indirizzo)
+Fede = Persona("Federico", "Tarozzi", 23, "via san carlo 45")
+Fede.aggiorna_eta(24)
+Fede.modifica_indirizzo("Via fratelli Rosselli 15")
 
 
 
-
-       
+Agu = Persona("Agustin", "Lopez", 28, "Da qualche parte a Mendoza")
+Agu.aggiorna_eta(32)
+Agu.modifica_indirizzo("via del football 29")
