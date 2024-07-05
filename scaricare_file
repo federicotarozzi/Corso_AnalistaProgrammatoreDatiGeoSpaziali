@@ -1,0 +1,10 @@
+
+# ciclo per dare indicazioni a python su come scaricare file automaticamente da un portale. 
+# range --> diversi anni
+
+
+
+for i in range(2004,2025):
+    os.system('wget --recursive -c --no-check-certificate -r -np -nH --user=antonio19812 --password=21011981Aa  -A "*00.nc" \
+     https://datalsasaf.lsasvcs.ipma.pt/PRODUCTS/MSG/MLST-ASv2/NETCDF/'+str(i)+'/01/ >/dev/null 2>&1')
+    print('year ' + str(i) + 'done')
